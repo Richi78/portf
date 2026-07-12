@@ -1,0 +1,18 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 0;
+}
+
+.container {
+  composes: container from global;
+  text-align: center;
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.name {
+  color: var(--color-text);
+}

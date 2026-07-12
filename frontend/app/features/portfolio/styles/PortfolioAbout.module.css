@@ -1,0 +1,40 @@
+.about {
+  composes: section from global;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.container {
+  composes: container from global;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.title {
+  composes: sectionTitle from global;
+  margin-bottom: 0;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 280px 1fr;
+    gap: 4rem;
+  }
+}

@@ -1,0 +1,150 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.container {
+  composes: container from global;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.text {
+  order: 2;
+}
+
+.imageWrapper {
+  order: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.greeting {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.role {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.summary {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 540px;
+  margin-bottom: 2rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.primaryButton {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.primaryButton:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.secondaryButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.profileImage {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-border);
+}
+
+.placeholderImage {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+  }
+
+  .text {
+    order: 1;
+  }
+
+  .imageWrapper {
+    order: 2;
+    justify-content: flex-end;
+  }
+
+  .name {
+    font-size: 4.5rem;
+  }
+
+  .role {
+    font-size: 1.75rem;
+  }
+
+  .profileImage,
+  .placeholderImage {
+    width: 280px;
+    height: 280px;
+  }
+}
