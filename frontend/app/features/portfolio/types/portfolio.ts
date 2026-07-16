@@ -6,6 +6,8 @@ export interface Profile {
   linkedin: string
   github: string
   summary: string
+  photo: string
+  cv: string
 }
 
 export interface About {
@@ -23,6 +25,8 @@ export interface Project {
   technologies: string[]
   demoUrl?: string
   repoUrl?: string
+  imageUrl?: string
+  manualUrl?: string
 }
 
 export interface Experience {
