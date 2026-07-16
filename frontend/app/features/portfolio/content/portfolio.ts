@@ -35,7 +35,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       category: 'Methodologies',
-      items: ['Scrum', 'Kanban', 'Nexus', 'XP']
+      items: ['Scrum', 'Kanban', 'Nexus', 'XP'] 
     }
   ],
 
