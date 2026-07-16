@@ -8,7 +8,9 @@ export const portfolioData: PortfolioData = {
     email: 'ricardo.rojas.carvajal@gmail.com',
     linkedin: 'https://www.linkedin.com/in/ricardo-rojas-carvajal-b3a691204',
     github: 'https://github.com/Richi78',
-    summary: 'Passionate about building web applications. ICPC Regional Contestant with a strong background in algorithms. Experienced in agile environments (Scrum, Nexus, XP) and collaborative development.'
+    summary: 'Passionate about building web applications. ICPC Regional Contestant with a strong background in algorithms. Experienced in agile environments (Scrum, Nexus, XP) and collaborative development.',
+    photo: '/YO2.jpeg',
+    cv: '/RicardoRojasC.pdf'
   },
   about: {
     paragraphs: [
@@ -42,31 +44,36 @@ export const portfolioData: PortfolioData = {
       title: 'TuCasa - Real Estate Platform',
       description: 'A platform that allows users to list properties for rent or sale, as well as search for available properties. Includes user authentication, property management, and real estate agent support.',
       technologies: ['React', 'Spring Boot', 'PostgreSQL'],
-      repoUrl: 'https://github.com/Frosmin/TuCasa'
+      repoUrl: 'https://github.com/Frosmin/TuCasa',
+      imageUrl: '/TuCasa.png',
+      manualUrl: 'https://drive.google.com/drive/folders/17obqk-Vt2qGNUzkwvpzi-Dczm-zHJVOd?usp=sharing'
     },
     {
-      title: 'PyLearn - Learning Platform',
+      title: 'PyBloom - Learning Platform',
       description: 'An educational platform that lets users learn Python through interactive lessons and hands-on exercises, including a sandbox to run code in real time.',
       technologies: ['Angular', 'Go', 'PostgreSQL', 'Docker'],
-      repoUrl: 'https://github.com/Frosmin/Generacion-Software'
+      repoUrl: 'https://github.com/Frosmin/Generacion-Software',
+      imageUrl: '/PyBloom.png'
     },
     {
       title: 'TisTracker - Student Management System',
       description: 'A system that helps teachers manage student groups, generate assessments and performance reports, and allows students to view their grades and progress.',
       technologies: ['React', 'Laravel', 'PostgreSQL', 'Docker'],
-      repoUrl: 'https://github.com/Api-programming-company/TisTracker'
+      repoUrl: 'https://github.com/Api-programming-company/TisTracker',
+      imageUrl: '/TisTracker.png'
     },
     {
       title: 'Friender - Platform for Renting Friends',
       description: 'This platform allows users to rent friends for various social activities such as going out to eat, watching a movie, or simply spending time together. Includes user profiles, a booking system, and ratings.',
       technologies: ['React', 'Django Rest Framework', 'PostgreSQL'],
-      repoUrl: 'https://github.com/BitBudies/Friender'
+      repoUrl: 'https://github.com/BitBudies/Friender',
+      imageUrl: '/Friender.png'
     }
   ],
 
   experience: [
     {
-      role: 'Full Stack Developer',
+      role: 'Freelance Full Stack Developer',
       company: 'UNICEN',
       location: 'Cochabamba, Bolivia',
       startDate: 'Feb 2026',
@@ -75,7 +82,7 @@ export const portfolioData: PortfolioData = {
         'Development of a complete system under NDA.',
         'SPA using Vue 3, Pinia, and Vue Router.',
         'REST API with Express, Prisma, PostgreSQL, and Zod.',
-        'API Key management for external systems.'
+        'API Key management for external systems.',
       ]
     },
     {
@@ -105,16 +112,16 @@ export const portfolioData: PortfolioData = {
       description: 'Advanced English certification.'
     },
     {
+      degree: 'Hackathon Byte Back 2nd Place',
+      institution: 'Microsoft Learn Student Ambassadors',
+      year: '2026',
+      description: 'Second place with a Chrome extension that detects hostile intent using artificial intelligence.'
+    },
+    {
       degree: 'ICPC Regional Contestant',
       institution: 'ICPC Bolivia',
       year: '2025',
       description: 'Regional contestant in the world\'s largest programming competition.'
     },
-    {
-      degree: 'Hackathon Byte Back 2nd Place',
-      institution: 'Microsoft Learn Student Ambassadors',
-      year: '2026',
-      description: 'Second place with a Chrome extension that detects hostile intent using artificial intelligence.'
-    }
   ]
 }
