@@ -97,16 +97,16 @@
 }
 
 .profileImage {
-  width: 220px;
-  height: 220px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--color-border);
 }
 
 .placeholderImage {
-  width: 220px;
-  height: 220px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   background-color: var(--color-surface);
   border: 2px solid var(--color-border);
@@ -146,5 +146,13 @@
   .placeholderImage {
     width: 280px;
     height: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profileImage,
+  .placeholderImage {
+    width: 380px;
+    height: 380px;
   }
 }
