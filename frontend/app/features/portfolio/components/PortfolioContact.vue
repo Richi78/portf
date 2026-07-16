@@ -48,7 +48,7 @@ const { profile } = usePortfolio()
         </a>
 
         <a
-          :href="`/cv.pdf`"
+          :href="profile.cv"
           download
           :class="styles.link"
           aria-label="Download CV"

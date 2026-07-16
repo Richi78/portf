@@ -44,7 +44,7 @@ onUnmounted(() => {
   <header :class="[styles.header, isScrolled ? styles.headerScrolled : '']">
     <div :class="styles.container">
       <a href="#home" :class="styles.logo">
-        Your<span :class="styles.logoAccent">Portfolio</span>
+        Richi<span :class="styles.logoAccent">78</span>
       </a>
 
       <nav :class="styles.nav" aria-label="Main navigation">

@@ -9,7 +9,7 @@ const { profile } = usePortfolio()
   <footer :class="styles.footer">
     <div :class="styles.container">
       <p :class="styles.text">
-        © {{ new Date().getFullYear() }} <span :class="styles.name">{{ profile.name }}</span>. All rights reserved.
+        © {{ new Date().getFullYear() }} <span :class="styles.name">{{ profile.name }}</span>.
       </p>
     </div>
   </footer>
